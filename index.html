@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arctic RISE — Arctic atmospheric profile observations</title>
+  <meta name="description" content="Arctic RISE (Arctic RoutIne atmoSphEric profile sampling) is an international initiative to advance coordinated atmospheric vertical-profile observations across the Arctic.">
+  <meta name="theme-color" content="#0b1d33">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="wordmark" href="#top" aria-label="Arctic RISE — back to top">
+        <svg class="wordmark__mark" viewBox="0 0 20 28" aria-hidden="true" focusable="false">
+          <line x1="10" y1="2" x2="10" y2="26"/>
+          <circle cx="10" cy="6" r="2"/>
+          <circle cx="10" cy="14" r="2"/>
+          <circle cx="10" cy="22" r="2"/>
+        </svg>
+        <span class="wordmark__text">Arctic <strong>RISE</strong></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO
+         The background photograph is set in css/styles.css (--hero-image).
+         The observing-platform illustration below is inline SVG + HTML
+         labels, so every element can be edited independently.
+         ============================================================ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media" role="img" aria-label="Arctic landscape with snow-covered ground and mountains under a wide sky"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Arctic RoutIne atmoSphEric profile sampling</p>
+        <h1 class="hero__title" id="hero-title">Advancing Arctic atmospheric profile observations</h1>
+        <p class="hero__lead">Arctic RISE is an international initiative bringing together researchers, observing platorms, modelling centres, and other partners to improve coordinated measurements of the vertical structure of the Arctic atmosphere.</p>
+        <a class="hero__cta" href="#why">Explore the initiative <span aria-hidden="true">→</span></a>
+
+        <ul class="hero__legend" aria-label="Illustration key">
+          <li>
+            <svg viewBox="0 0 28 8" aria-hidden="true" focusable="false"><line x1="1" y1="4" x2="27" y2="4" class="path-insitu"/><circle cx="14" cy="4" r="2.2" class="marker"/></svg>
+            In-situ sampling
+          </li>
+          <li>
+            <svg viewBox="0 0 28 8" aria-hidden="true" focusable="false"><line x1="1" y1="4" x2="27" y2="4" class="beam beam--legend"/></svg>
+            Remote sensing
+          </li>
+        </ul>
+      </div>
+
+      <!-- ---------- Observing-platform illustration ----------
+           Coordinates use an 800 × 900 viewBox; the ground is at y = 868.
+           Labels (the <ul> below the SVG) are positioned with --x / --y
+           as percentages of the same box: x% = x / 8, y% = y / 9.
+           See README.md → "Editing the hero illustration".            -->
+      <figure class="hero__illustration">
+        <svg class="obs-svg" viewBox="0 0 800 900" preserveAspectRatio="xMidYMax meet" role="img" aria-labelledby="obs-title obs-desc">
+          <title id="obs-title">Coordinated Arctic atmospheric profile observations</title>
+          <desc id="obs-desc">Illustration of six observing approaches. A satellite observes the atmosphere from orbit with dashed remote-sensing beams. A research aircraft follows a solid sampling path as it climbs through the atmosphere. An uncrewed aerial system profiles vertically above the ground. A tethered balloon or helikite carries instruments on its tether. A ground-based remote-sensing instrument sends dashed beams upwards from a single point on the ground. A community-based monitoring station observes at the surface.</desc>
+
+          <defs>
+            <!-- Fades for the remote-sensing beams -->
+            <linearGradient id="fade-sat" gradientUnits="userSpaceOnUse" x1="0" y1="160" x2="0" y2="660">
+              <stop offset="0" stop-color="#bfe0f2" stop-opacity="0.85"/>
+              <stop offset="1" stop-color="#bfe0f2" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="fade-ground" gradientUnits="userSpaceOnUse" x1="0" y1="851" x2="0" y2="330">
+              <stop offset="0" stop-color="#bfe0f2" stop-opacity="0.9"/>
+              <stop offset="1" stop-color="#bfe0f2" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <!-- 1. SATELLITE (remote sensing: dashed beams) -->
+          <g class="platform" id="obs-satellite">
+            <line class="beam" x1="690" y1="164" x2="642" y2="660" stroke="url(#fade-sat)"/>
+            <line class="beam" x1="690" y1="164" x2="738" y2="660" stroke="url(#fade-sat)"/>
+            <g class="icon" transform="translate(690 150)">
+              <rect x="-9" y="-7" width="18" height="14" rx="2"/>
+              <line x1="-15" y1="0" x2="-9" y2="0"/>
+              <line x1="9" y1="0" x2="15" y2="0"/>
+              <rect class="panel" x="-39" y="-6" width="24" height="12"/>
+              <rect class="panel" x="15" y="-6" width="24" height="12"/>
+              <line x1="-27" y1="-6" x2="-27" y2="6"/>
+              <line x1="27" y1="-6" x2="27" y2="6"/>
+              <line x1="0" y1="7" x2="0" y2="12"/>
+            </g>
+          </g>
+
+          <!-- 2. AIRCRAFT (in situ: solid sampling path + markers) -->
+          <g class="platform" id="obs-aircraft">
+            <path class="path-insitu" d="M70 450 L190 450 L340 240 L444 240"/>
+            <circle class="marker" cx="130" cy="450" r="3"/>
+            <circle class="marker" cx="227.5" cy="397.5" r="3"/>
+            <circle class="marker" cx="265" cy="345" r="3"/>
+            <circle class="marker" cx="302.5" cy="292.5" r="3"/>
+            <circle class="marker" cx="392" cy="240" r="3"/>
+            <path class="icon icon--fill" transform="translate(470 240)"
+                  d="M22 0C22-2 19-3 16-3H4L-6-16H-11L-4-3H-14L-19-9H-22L-19 0L-22 9H-19L-14 3H-4L-11 16H-6L4 3H16C19 3 22 2 22 0Z"/>
+          </g>
+
+          <!-- 3. UNCREWED AERIAL SYSTEM (in situ: vertical profile from the ground) -->
+          <g class="platform" id="obs-uas">
+            <line class="path-insitu" x1="130" y1="868" x2="130" y2="640"/>
+            <circle class="marker" cx="130" cy="822" r="3"/>
+            <circle class="marker" cx="130" cy="774" r="3"/>
+            <circle class="marker" cx="130" cy="726" r="3"/>
+            <circle class="marker" cx="130" cy="678" r="3"/>
+            <g class="icon" transform="translate(130 628)">
+              <rect x="-6" y="-3" width="12" height="7" rx="2"/>
+              <line x1="-17" y1="-1" x2="17" y2="-1"/>
+              <ellipse cx="-17" cy="-5" rx="8" ry="1.8"/>
+              <ellipse cx="17" cy="-5" rx="8" ry="1.8"/>
+              <line x1="-17" y1="-1" x2="-17" y2="-4"/>
+              <line x1="17" y1="-1" x2="17" y2="-4"/>
+              <line x1="-4" y1="4" x2="-7" y2="9"/>
+              <line x1="4" y1="4" x2="7" y2="9"/>
+            </g>
+          </g>
+
+          <!-- 4. TETHERED BALLOON / HELIKITE (in situ: tether with sensor packages) -->
+          <g class="platform" id="obs-balloon">
+            <line class="path-insitu path-insitu--tether" x1="310" y1="868" x2="310" y2="540"/>
+            <rect class="marker" x="306" y="786" width="8" height="8" rx="1"/>
+            <rect class="marker" x="306" y="706" width="8" height="8" rx="1"/>
+            <rect class="marker" x="306" y="626" width="8" height="8" rx="1"/>
+            <g class="icon" transform="translate(310 520)">
+              <ellipse cx="0" cy="-2" rx="15" ry="11"/>
+              <path d="M-22 4L0 20L22 4"/>
+            </g>
+          </g>
+
+          <!-- 5. GROUND-BASED REMOTE SENSING
+               All beams start at ONE instrument on the ground and diverge upwards. -->
+          <g class="platform" id="obs-ground-rs">
+            <line class="beam" x1="530" y1="851" x2="530" y2="330" stroke="url(#fade-ground)"/>
+            <line class="beam" x1="530" y1="851" x2="472" y2="350" stroke="url(#fade-ground)"/>
+            <line class="beam" x1="530" y1="851" x2="588" y2="350" stroke="url(#fade-ground)"/>
+            <g class="icon" transform="translate(530 868)">
+              <rect x="-15" y="-13" width="30" height="13" rx="1.5"/>
+              <path d="M-8-13A8 5 0 0 1 8-13"/>
+            </g>
+          </g>
+
+          <!-- 6. COMMUNITY-BASED MONITORING (surface observations) -->
+          <g class="platform" id="obs-community">
+            <g class="icon" transform="translate(700 868)">
+              <path d="M-15 0V-14L0-25L15-14V0Z"/>
+              <rect x="-4" y="-9" width="8" height="9"/>
+              <line x1="25" y1="0" x2="25" y2="-30"/>
+              <line x1="20" y1="-24" x2="30" y2="-24"/>
+            </g>
+            <circle class="marker" cx="725" cy="835" r="3.2"/>
+          </g>
+        </svg>
+
+        <!-- Platform labels: HTML so they stay crisp and readable at any size.
+             --x / --y      = desktop position (percent of the illustration box)
+             data-align     = where the label sits relative to that point: left | right | above | below
+             --mx / --my, data-m-align = optional overrides for small screens
+             .label-full / .label-short = long and short text (short is used on phones) -->
+        <ul class="platform-labels" aria-hidden="true">
+          <li class="platform-label" data-align="left" data-m-align="left" style="--x:81.25%; --y:16.7%; --my:20.5%;">
+            <span class="label-full">Satellites</span><span class="label-short">Satellites</span>
+          </li>
+          <li class="platform-label" data-align="above" data-m-align="below" style="--x:58.75%; --y:23.9%; --my:28.9%;">
+            <span class="label-full">Aircraft</span><span class="label-short">Aircraft</span>
+          </li>
+          <li class="platform-label" data-align="right" style="--x:19%; --y:69.8%;">
+            <span class="label-full">Uncrewed aerial<br>systems (UAS)</span><span class="label-short">UAS</span>
+          </li>
+          <li class="platform-label" data-align="right" data-m-align="left" style="--x:41.75%; --y:57.8%; --mx:35.5%;">
+            <span class="label-full">Tethered balloons<br>/ helikites</span><span class="label-short">Tethered balloons<br>/ helikites</span>
+          </li>
+          <li class="platform-label" data-align="left" style="--x:63.75%; --y:95.4%;">
+            <span class="label-full">Ground-based<br>remote sensing</span><span class="label-short">Ground-based<br>remote sensing</span>
+          </li>
+          <li class="platform-label" data-align="above" style="--x:87.5%; --y:92%; --mx:89%;">
+            <span class="label-full">Community-based<br>monitoring</span><span class="label-short">Community<br>monitoring</span>
+          </li>
+        </ul>
+      </figure>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION A — Why atmospheric profiles matter
+         ============================================================ -->
+    <section class="section" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Why it matters</p>
+          <h2 id="why-title">Why atmospheric profiles matter</h2>
+        </header>
+
+        <p class="lead lead--narrow">Vertical profile measurements show how the atmosphere changes with height. They provide essential information on its structure and composition, including temperature, humidity, aerosols, trace gases, cloud properties and atmospheric stability, helping researchers understand Arctic atmospheric processes and how they are changing.</p>
+
+        <h3 class="subhead">These observations are critical for</h3>
+        <ul class="feature-grid">
+          <li class="feature">
+            <h3>Understanding Arctic change</h3>
+            <p>Profiles show how warming, moisture, clouds and trace constituents are distributed with height, helping to explain the processes behind rapid Arctic environmental change.</p>
+          </li>
+          <li class="feature">
+            <h3>Improving weather and climate prediction</h3>
+            <p>Expanded routine profiling will fill a major gap in model constraint for Arctic weather predicition and for climate model evaluation. </p>
+          </li>
+          <li class="feature">
+            <h3>Evaluating satellite products</h3>
+            <p>Independent measurements through the atmospheric column are needed to assess satellite retrievals in challenging Arctic conditions.</p>
+          </li>
+          <li class="feature">
+            <h3>Atmospheric composition and air quality</h3>
+            <p>Profiles of aerosols and trace gases show how they are transported and processed, and how they interact with clouds, radiation and the surface.</p>
+          </li>
+          <li class="feature">
+            <h3>Supporting Earth system models</h3>
+            <p>Profile data will improve the understanding that underpins Earth system modelling processes, strengthening the path from observation to prediction.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION B — About Arctic RISE
+         ============================================================ -->
+    <section class="section section--tint" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-head">
+          <header class="section-head">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">About Arctic RISE</h2>
+          </header>
+          <!-- Arctic RISE badge. Replace assets/arctic-rise-badge.* to update it. -->
+          <picture class="badge">
+            <source srcset="assets/arctic-rise-badge.webp" type="image/webp">
+            <img src="assets/arctic-rise-badge.png" width="160" height="160"
+                 alt="Arctic RISE badge: a circular emblem showing satellites, aircraft, drones, a helikite and a ground station above an Arctic landscape">
+          </picture>
+        </div>
+
+        <div class="split split--about">
+          <p class="lead">Atmospheric vertical profile observations are fundamental to understanding the rapidly changing Arctic environment. Yet they remain sparse, unevenly distributed, and completely absent in some regions and seasons.</p>
+          <div class="prose">
+            <p>Arctic RISE — <em>Arctic RoutIne atmoSphEric profile sampling</em> — is an international initiative that brings together communities involved in atmospheric profiling, modelling centres and Arctic research and assessment initiatives. Measurement groups include researchers operating ground-based remote sensing systems, tethered balloon platforms, aircraft campaigns, drone platforms and emerging observing technologies.</p>
+            <p>The initiative promotes collaboration, knowledge exchange and community-driven planning to work towards a coordinated and sustained network for routine Arctic atmospheric profile observations.</p>
+          </div>
+          <div class="about-themes">
+            <h3 class="subhead subhead--tight">Key themes</h3>
+            <ul class="theme-list">
+              <li>Atmospheric composition profiling</li>
+              <li>Aerosol–cloud interactions</li>
+              <li>Greenhouse gases and air quality</li>
+              <li>Weather and climate prediction</li>
+              <li>Observation–model integration</li>
+              <li>Coordinated Arctic observing strategies</li>
+              <li>Preparation for International Polar Year 2032-33</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="subhead">Observing approaches</h3>
+        <ul class="platform-grid">
+          <li><h4>Satellites</h4><p>Remote sensing of the atmosphere from orbit, offering broad spatial coverage.</p></li>
+          <li><h4>Aircraft</h4><p>Measurements onboard routinely operating aircraft and targeted sampling using research aircraft campaigns.</p></li>
+          <li><h4>Uncrewed aerial systems</h4><p>Drones profiling the lower atmosphere with flexible, repeatable flights.</p></li>
+          <li><h4>Tethered balloons & helikites</h4><p>Instruments lifted on a tether to sample the lowest part of the atmosphere in fine vertical detail.</p></li>
+          <li><h4>Ground-based remote sensing</h4><p>Instruments at the surface that can remotely probe the atmosphere from below.</p></li>
+          <li><h4>Community-based monitoring</h4><p>Observations made by and with Arctic communities, linking local knowledge and needs with wider observing efforts.</p></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION C — Vision
+         ============================================================ -->
+    <section class="section section--dark" id="vision" aria-labelledby="vision-title">
+      <div class="container">
+        <header class="section-head section-head--wide">
+          <p class="eyebrow">Vision</p>
+          <h2 id="vision-title">A coordinated Arctic atmospheric profiling network supporting science, prediction and decision-making</h2>
+        </header>
+
+        <p class="statement">Arctic RISE envisions a future where atmospheric vertical profile observations are:</p>
+
+        <ul class="vision-points">
+          <li><h3>Sustained</h3><p>Maintained over the long term.</p></li>
+          <li><h3>Coordinated</h3><p>Across nations and organisations.</p></li>
+          <li><h3>Integrated</h3><p>Across measurement platforms.</p></li>
+          <li><h3>Accessible</h3><p>Open to the wider community.</p></li>
+          <li><h3>Needs-driven</h3><p>Designed to address scientific and societal needs.</p></li>
+        </ul>
+
+        <p class="vision-close">Through international collaboration, Arctic RISE aims to help build the observational foundation needed to improve our understanding of Arctic atmospheric processes and their global impacts.</p>
+
+        <aside class="ipy-callout" aria-labelledby="ipy-title">
+          <h3 id="ipy-title">Towards International Polar Year 2032–33</h3>
+          <p>The next International Polar Year offers an important opportunity to strengthen coordinated Arctic observations. Arctic RISE aims to contribute to preparations for IPY 2032–33, working towards a more comprehensive and sustainable observing capability step by step and in partnership with others.</p>
+        </aside>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION D — Activities
+         ============================================================ -->
+    <section class="section" id="activities" aria-labelledby="activities-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Activities</p>
+          <h2 id="activities-title">What we do</h2>
+        </header>
+
+        <ol class="card-grid">
+          <li class="card">
+            <h3>Community building</h3>
+            <p>Connecting researchers, observational scientists, modelling communities and operational centres interested in Arctic atmospheric profiling.</p>
+          </li>
+          <li class="card">
+            <h3>Observing system assessment</h3>
+            <p>Identifying existing capabilities, strengths, observational gaps and future requirements for vertical profile measurements.</p>
+          </li>
+          <li class="card">
+            <h3>Workshops and working groups</h3>
+            <p>Bringing experts together to discuss scientific priorities, technical challenges and opportunities for coordination.</p>
+          </li>
+          <li class="card">
+            <h3>Observation–model integration</h3>
+            <p>Exploring how profile observations can better support weather forecasting, climate modelling, reanalysis and satellite validation.</p>
+          </li>
+          <li class="card">
+            <h3>Strategic planning</h3>
+            <p>Developing recommendations and roadmaps for long-term Arctic observing capability and preparations for IPY 2032–33.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION E — Contact and collaboration
+         >>> SET THE CONTACT EMAIL HERE, split into two parts to deter spam bots:
+             data-contact-user   = the part BEFORE the @   (e.g. "s.arnold")
+             data-contact-domain = the part AFTER the @    (e.g. "leeds.ac.uk")
+             The browser joins them when the page is viewed. Leave either empty ("")
+             to hide the email button. Never type the full address anywhere in this file.
+         ============================================================ -->
+    <section class="section section--tint section--contact" id="contact" aria-labelledby="contact-title"
+             data-contact-user="s.arnold" data-contact-domain="leeds.ac.uk">
+      <div class="container contact">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Get involved</h2>
+        <p class="lead">Arctic RISE welcomes researchers, observing networks, agencies and other interested partners who share an interest in Arctic atmospheric profile observations. We would be glad to hear from you.</p>
+        <p class="contact__action" hidden>
+          <a class="button" id="contact-email-link" href="#contact">Email Arctic RISE</a>
+          <span class="contact__address" id="contact-email-text"></span>
+        </p>
+
+        <!-- Parent programme. Logo: assets/paces-logo.png -->
+        <div class="affiliation">
+          <a class="affiliation__logo" href="https://pacesproject.org">
+            <img src="assets/paces-logo.png" width="140" height="55"
+                 alt="PACES – air Pollution in the Arctic: Climate, Environment and Societies (visit pacesproject.org)">
+          </a>
+          <p>Arctic RISE is a <a href="https://pacesproject.org">PACES</a> initiative.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__about">
+        <p class="wordmark wordmark--footer">
+          <svg class="wordmark__mark" viewBox="0 0 20 28" aria-hidden="true" focusable="false">
+            <line x1="10" y1="2" x2="10" y2="26"/>
+            <circle cx="10" cy="6" r="2"/>
+            <circle cx="10" cy="14" r="2"/>
+            <circle cx="10" cy="22" r="2"/>
+          </svg>
+          <span class="wordmark__text">Arctic <strong>RISE</strong></span>
+        </p>
+        <p>Arctic RoutIne atmoSphEric profile sampling — an international initiative to advance coordinated atmospheric vertical-profile observations across the Arctic.</p>
+        <p class="site-footer__affil">A <a href="https://pacesproject.org">PACES</a> initiative</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="site-footer__nav">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -329,6 +329,14 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .hero__content > * { max-width: min(35rem, 44vw); }
 
+.hero__affil {
+  margin: -0.75rem 0 1.75rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.hero__affil a { color: var(--white); text-decoration-color: rgba(255, 255, 255, 0.45); }
+.hero__affil a:hover { color: var(--white); text-decoration-color: var(--white); }
+
 .hero__eyebrow {
   margin-bottom: 1.25rem;
   font-size: 0.8rem;
@@ -466,6 +474,68 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 
 /* 7. CONTENT SECTIONS ====================================================== */
+
+/* Partners strip (directly below the hero) */
+.partners {
+  padding: clamp(1.75rem, 3.5vw, 2.5rem) 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+}
+.partners__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 3rem;
+}
+.partners__text { max-width: 40rem; font-size: 0.95rem; color: var(--muted); }
+.partners__text a { color: var(--navy-800); }
+.partners__logos { display: flex; align-items: center; gap: clamp(1.5rem, 3vw, 2.5rem); flex: none; }
+.partner { display: block; text-decoration: none; }
+.partner img { display: block; height: 48px; width: auto; }
+.partner--tall img { height: 64px; }  /* upright logos such as IASC */
+/* Text stand-in until a logo image is added */
+.partner--text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--navy-800);
+}
+.partner--text:hover { color: var(--blue-600); }
+
+/* Research priority + key documents (end of "Why" section) */
+.priority {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+  padding-top: clamp(2rem, 4vw, 2.75rem);
+  border-top: 1px solid var(--line);
+}
+.priority .subhead--flush { margin-top: 0; }
+.priority__text { color: var(--muted); }
+.priority__text em { font-style: italic; color: var(--ink); }
+.doc-links { display: grid; gap: 0.75rem; }
+.doc-links a {
+  display: block;
+  position: relative;
+  padding: 1rem 2.75rem 1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--ice-50);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+.doc-links a:hover { border-color: var(--blue-400); }
+.doc-links a::after {
+  content: "↗";
+  position: absolute;
+  right: 1.1rem; top: 1rem;
+  color: var(--blue-600);
+}
+.doc-links__title { display: block; font-weight: 600; color: var(--navy-900); line-height: 1.4; font-size: 0.97rem; }
+.doc-links__meta { display: block; margin-top: 0.3rem; font-size: 0.82rem; color: var(--muted); }
+
 
 /* Why profiles matter */
 .lead--narrow { max-width: 46rem; }
@@ -622,19 +692,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .contact__address { color: var(--muted); font-size: 0.95rem; }
 
 .affiliation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.6rem;
-  margin: clamp(2.75rem, 5vw, 3.5rem) auto 0;
-  padding-top: 2rem;
-  max-width: 22rem;
+  margin: clamp(2.5rem, 5vw, 3rem) auto 0;
+  padding-top: 1.75rem;
+  max-width: 30rem;
   border-top: 1px solid var(--line);
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--muted);
 }
-.affiliation__logo { display: block; border-radius: 2px; }
-.affiliation__logo img { display: block; width: 140px; height: auto; }
 
 .button {
   display: inline-block;
@@ -746,6 +810,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .platform-label[data-m-align="below"] { transform: translate(-50%, 0); text-align: center; }
 
   .split { grid-template-columns: 1fr; }
+  .priority { grid-template-columns: 1fr; }
+  .partners__inner { flex-direction: column; align-items: flex-start; }
   .split--about { grid-template-areas: "lead" "prose" "themes"; row-gap: 1.5rem; }
   .platform-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .vision-points { grid-template-columns: repeat(2, minmax(0, 1fr)); }

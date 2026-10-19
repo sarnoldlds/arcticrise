@@ -101,6 +101,10 @@ The circular Arctic RISE badge appears, deliberately small, beside the "About Ar
 
 The PACES logo and link sit at the end of the Contact section (`<div class="affiliation">`), with a text link in the footer. The logo file is small (283 px wide), so keep it at about 140 px on screen; if a higher-resolution version becomes available, replace `assets/paces-logo.png` (a transparent background works best).
 
+### Partner logos (PACES, IGAC, IASC)
+
+The strip directly below the hero names the parent programme (PACES) and its co-sponsors (IGAC and IASC), with their logos: `assets/paces-logo.png`, `assets/igac-logo.png` and `assets/iasc-logo.png`. To update a logo, replace the file (keeping its name), ideally with a transparent background. Wide logos are shown 48 px tall (`.partner img` in `css/styles.css`); square or upright logos (IGAC, IASC) use `class="partner partner--tall"` and are shown 64 px tall.
+
 ---
 
 ## 5. Editing the hero illustration (platforms, labels and measurement paths)
@@ -149,10 +153,15 @@ The site is just files, so any static host works. Upload the **whole folder** ke
 
 ### GitHub Pages
 
-1. Create a repository on GitHub and upload the contents of this folder (so `index.html` is at the repository root).
-2. In the repository go to **Settings → Pages**.
-3. Under *Build and deployment*, choose **Deploy from a branch**, select `main` and `/ (root)`, then **Save**.
-4. After a minute the site is live at `https://<username>.github.io/<repository>/`. A custom domain can be added on the same settings page.
+1. Create a repository on GitHub (public, unless your plan supports Pages for private repositories).
+2. In the repository click **Add file → Upload files** and drag in the **contents** of this folder — `index.html`, `README.md`, and the `css`, `js` and `assets` folders. Don't upload the `.zip` (GitHub won't unpack it), and don't drag the enclosing folder itself, or the site will end up one level down. `index.html` must be at the top level of the repository.
+3. **Scroll down and click _Commit changes_.** Uploaded files are not saved until you do this.
+4. Go to **Settings → Pages**. Under *Build and deployment*, choose **Deploy from a branch**, select `main` and `/ (root)`, then **Save**.
+5. Open the **Actions** tab: a "pages build and deployment" run appears. When it shows a green tick (usually 1–2 minutes), the site is live at `https://<username>.github.io/<repository>/`.
+
+**Updating the site later:** edit a file directly on GitHub (pencil icon) or upload a replacement with **Add file → Upload files**, then click **Commit changes** each time. The site republishes automatically within a minute or two.
+
+A custom domain can be added under **Settings → Pages → Custom domain** (see GitHub's guide to managing a custom domain).
 
 ### Conventional web host (cPanel, university web space, etc.)
 

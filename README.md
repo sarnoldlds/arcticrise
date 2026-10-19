@@ -11,7 +11,7 @@ arctic-rise/
 ├── assets/
 │   ├── hero-landscape.jpg  Hero background photograph
 │   ├── arctic-rise-badge.webp / .png   Arctic RISE badge (shown beside "About Arctic RISE")
-│   ├── paces-logo.png      PACES logo (Contact section, links to pacesproject.org)
+│   ├── paces-logo.png      PACES logo (partners strip below the hero)
 │   └── favicon.svg         Browser-tab icon
 └── README.md
 ```

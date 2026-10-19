@@ -56,7 +56,7 @@ Edit the words between the tags; leave the tags themselves in place. Activity ca
 The address is set in **one place** in `index.html`, split into two parts so that spam bots scanning the page source don't find a complete email address:
 
 ```html
-<section ... id="contact" ... data-contact-user="s.arnold" data-contact-domain="leeds.ac.uk">
+<section ... id="contact" ... data-contact-user="contact" data-contact-domain="arcticrise.org">
 ```
 
 - `data-contact-user` — the part **before** the @

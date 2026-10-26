@@ -79,6 +79,12 @@ This deters most automated address harvesting but isn't foolproof.
 
 The current address, **contact@arcticrise.org**, is an email-forwarding alias set up in Squarespace (account.squarespace.com/domains → arcticrise.org → Email forwarding). To change who receives enquiries, edit the forwarding rule there – the website doesn't need to change.
 
+### Visitor statistics
+
+The site uses **Cloudflare Web Analytics** (free and cookie-free) to count visits, countries, referrers and popular pages. View the statistics by logging in to Cloudflare → **Web Analytics** → arcticrise.org.
+
+The tracking code is at the end of `js/main.js` and only runs when the page is served from arcticrise.org, so the preview copy on github.io isn't counted. To switch analytics off, delete that block, and the "cookie-free analytics" sentence in each page's footer.
+
 ---
 
 ## 3. Changing colours, fonts and spacing

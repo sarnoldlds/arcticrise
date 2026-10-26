@@ -86,4 +86,16 @@
       contact.querySelector('.contact__action').hidden = false;
     }
   }
+
+  /* ---- Visitor statistics (Cloudflare Web Analytics) --------------------- */
+  // Cookie-free analytics. It only runs on the live site (arcticrise.org), so
+  // visits to the preview copy on github.io are not counted.
+  // To switch analytics off, delete this block.
+  if (/(^|\.)arcticrise\.org$/.test(location.hostname)) {
+    var cf = document.createElement('script');
+    cf.defer = true;
+    cf.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    cf.setAttribute('data-cf-beacon', '{"token": "7cdef5a10cbe434c861561e4de97e644"}');
+    document.head.appendChild(cf);
+  }
 })();

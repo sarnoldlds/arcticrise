@@ -731,6 +731,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .site-footer__affil a:hover { color: var(--white); }
 .site-footer__affil { margin-top: 0.75rem; font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255, 255, 255, 0.6); }
 .wordmark--footer { margin-bottom: 1rem; color: var(--white); }
+.site-footer__note { margin-top: 0.5rem; font-size: 0.8rem; color: rgba(255, 255, 255, 0.55); }
 .site-footer__nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; }
 .site-footer__nav a { color: rgba(255, 255, 255, 0.82); text-decoration: none; }
 .site-footer__nav a:hover { color: var(--white); text-decoration: underline; }

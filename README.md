@@ -195,6 +195,8 @@ The site is just files, so any static host works. Upload the **whole folder** ke
 
 **Updating the site later:** edit a file directly on GitHub (pencil icon) or upload a replacement with **Add file → Upload files**, then click **Commit changes** each time. The site republishes automatically within a minute or two.
 
+**If a change to `css/styles.css` or `js/main.js` doesn't show up:** browsers keep old copies of these files. In both `index.html` and `namas.html`, raise the number after `?v=` where they are linked near the top and bottom of the file (e.g. `css/styles.css?v=2` → `?v=3`), so every visitor's browser fetches the new version.
+
 ### Custom domain (arcticrise.org)
 
 The domain is registered with Squarespace and points to GitHub Pages:

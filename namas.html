@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NAMAS — Arctic RISE</title>
+  <meta name="description" content="NAMAS (Novel Autonomous atmospheric Measurements for improved Arctic prediction and Security) is piloting low-cost all-sky cameras at Ny-Ålesund, Svalbard, to measure cloud base height and cloud-base winds through the polar night. An Arctic RISE project.">
+  <meta name="theme-color" content="#0b1d33">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================================================
+       HEADER (links point back to sections of the main page)
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="wordmark" href="index.html" aria-label="Arctic RISE — home">
+        <svg class="wordmark__mark" viewBox="0 0 20 28" aria-hidden="true" focusable="false">
+          <line x1="10" y1="2" x2="10" y2="26"/>
+          <circle cx="10" cy="6" r="2"/>
+          <circle cx="10" cy="14" r="2"/>
+          <circle cx="10" cy="22" r="2"/>
+        </svg>
+        <span class="wordmark__text">Arctic <strong>RISE</strong></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#vision">Vision</a></li>
+          <li><a href="index.html#activities">Activities</a></li>
+          <li><a href="index.html#projects" aria-current="true">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero hero--page" id="top" aria-labelledby="page-title">
+      <div class="hero__media" role="img" aria-label="Arctic landscape with snow-covered ground and mountains under a wide sky"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <p class="breadcrumb"><a href="index.html#projects">Arctic RISE projects</a> <span aria-hidden="true">/</span> NAMAS</p>
+        <h1 class="hero__title" id="page-title">NAMAS</h1>
+        <p class="hero__subtitle">Novel Autonomous atmospheric Measurements for improved Arctic prediction and Security</p>
+        <p class="hero__lead">Piloting low-cost, low-power all-sky cameras at Ny-Ålesund, Svalbard, to measure cloud base height and winds at cloud base through the polar night.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         KEY FACTS
+         ============================================================ -->
+    <section class="facts-band" aria-label="Project at a glance">
+      <div class="container">
+        <dl class="facts">
+          <div><dt>Lead</dt><dd>University of Leeds</dd></div>
+          <div><dt>Partner</dt><dd>Wx Labs</dd></div>
+          <div><dt>Location</dt><dd>UK Arctic Research Station, <span style="white-space: nowrap">Ny-Ålesund</span>, Svalbard</dd></div>
+          <div><dt>Programme</dt><dd>UK-Arctic Partnerships for Security, Resilience and Innovation 2026–2027</dd></div>
+        </dl>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         OVERVIEW
+         ============================================================ -->
+    <section class="section" id="overview" aria-labelledby="overview-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Overview</p>
+          <h2 id="overview-title">About NAMAS</h2>
+        </header>
+
+        <div class="split">
+          <p class="lead">NAMAS will demonstrate a novel, low-cost approach to improving Arctic atmospheric observations, using Arctic-proven all-sky imaging cameras that operate autonomously, use little power and need minimal maintenance once installed.</p>
+          <div class="prose">
+            <p>The project will deliver a pilot data stream of cloud base height and winds at cloud base, engage operational forecasting centres, and build links with <a href="index.html">Arctic RISE</a> and the <a href="https://www.amap.no">Arctic Monitoring and Assessment Programme (AMAP)</a>.</p>
+            <p>The aim is to work towards a proven, scalable observing capability with applications in atmospheric science, environmental monitoring, numerical weather prediction and Arctic security.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         HOW IT WORKS
+         ============================================================ -->
+    <section class="section section--tint" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Approach</p>
+          <h2 id="approach-title">How it works</h2>
+        </header>
+
+        <div class="split">
+          <p class="lead">Three all-sky cameras, spaced apart on the ground, photograph the whole sky at once. Seen from different positions, the same cloud features can be triangulated to give their height.</p>
+          <div class="prose">
+            <p>Stereoscopic imaging gives <strong>cloud base height</strong>, a core measurement for meteorological context and aviation safety. Tracking how cloud features move between image sequences, using AI-based motion tracking, gives <strong>atmospheric motion vectors</strong>: winds at cloud base.</p>
+            <p>Because each camera sees the whole sky rather than a single column overhead, the system can detect changing weather before it arrives over the site. The WxVision<sup>TM</sup> cameras, developed by Wx Labs, are designed for night-time imaging and heated to clear snow, ice and frost, making them suited to the polar night. As a stretch goal, the project will also test detection of airborne objects.</p>
+          </div>
+        </div>
+
+        <!-- Concept diagram (inline SVG – text is real text, editable here) -->
+        <figure class="figure">
+          <svg viewBox="0 0 900 360" role="img" aria-labelledby="fig-title fig-desc">
+            <title id="fig-title">How all-sky cameras measure cloud base height and winds</title>
+            <desc id="fig-desc">Three all-sky cameras on the ground each view the same cloud feature from a different position. Their lines of sight meet at the cloud base, giving its height by triangulation. Tracking the feature over time gives the wind at cloud base.</desc>
+            <!-- clouds -->
+            <g fill="#c9d8e8" opacity="0.75">
+              <ellipse cx="300" cy="92" rx="120" ry="26"/>
+              <ellipse cx="400" cy="78" rx="95" ry="30"/>
+              <ellipse cx="520" cy="90" rx="130" ry="28"/>
+              <ellipse cx="660" cy="96" rx="110" ry="22"/>
+            </g>
+            <!-- cloud base line -->
+            <line x1="170" y1="118" x2="800" y2="118" stroke="#7c9fc2" stroke-width="1.5" stroke-dasharray="6 6"/>
+            <text class="fig-text fig-text--muted" x="806" y="123" font-size="15">cloud base</text>
+            <!-- lines of sight from three cameras to one cloud feature -->
+            <g stroke="#2f5d8a" stroke-width="1.5" stroke-dasharray="5 6" fill="none">
+              <line x1="290" y1="296" x2="470" y2="118"/>
+              <line x1="470" y1="296" x2="470" y2="118"/>
+              <line x1="650" y1="296" x2="470" y2="118"/>
+            </g>
+            <circle cx="470" cy="118" r="6" fill="#0b1d33"/>
+            <!-- cloud motion arrow (AMV) -->
+            <g stroke="#0b1d33" stroke-width="2" fill="none" stroke-linecap="round">
+              <line x1="490" y1="60" x2="610" y2="60"/>
+              <path d="M600 52 L612 60 L600 68"/>
+            </g>
+            <text class="fig-text" x="622" y="52" font-size="16" font-weight="600">Cloud motion</text>
+            <text class="fig-text fig-text--muted" x="622" y="72" font-size="14">→ wind at cloud base (AMVs)</text>
+            <!-- height arrow -->
+            <g stroke="#0b1d33" stroke-width="1.5" fill="none" stroke-linecap="round">
+              <line x1="120" y1="124" x2="120" y2="292"/>
+              <path d="M113 132 L120 120 L127 132"/>
+              <path d="M113 284 L120 296 L127 284"/>
+            </g>
+            <text class="fig-text" x="136" y="200" font-size="16" font-weight="600">Cloud base</text>
+            <text class="fig-text" x="136" y="220" font-size="16" font-weight="600">height</text>
+            <text class="fig-text fig-text--muted" x="136" y="240" font-size="14">by triangulation</text>
+            <!-- ground -->
+            <line x1="40" y1="300" x2="860" y2="300" stroke="#0b1d33" stroke-width="1.5"/>
+            <!-- cameras -->
+            <g fill="#ffffff" stroke="#0b1d33" stroke-width="1.5">
+              <rect x="276" y="290" width="28" height="10" rx="1.5"/><path d="M280 290 A10 10 0 0 1 300 290"/>
+              <rect x="456" y="290" width="28" height="10" rx="1.5"/><path d="M460 290 A10 10 0 0 1 480 290"/>
+              <rect x="636" y="290" width="28" height="10" rx="1.5"/><path d="M640 290 A10 10 0 0 1 660 290"/>
+            </g>
+            <text class="fig-text" x="470" y="330" font-size="16" font-weight="600" text-anchor="middle">Three all-sky cameras</text>
+            <text class="fig-text fig-text--muted" x="470" y="350" font-size="14" text-anchor="middle">each sees the whole sky</text>
+          </svg>
+          <figcaption>Schematic (not to scale). Cameras at different positions see the same cloud feature from different angles; triangulating their lines of sight gives cloud base height, and tracking features through time gives winds at cloud base.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         OBJECTIVES
+         ============================================================ -->
+    <section class="section" id="objectives" aria-labelledby="objectives-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Objectives</p>
+          <h2 id="objectives-title">What NAMAS will do</h2>
+        </header>
+        <ol class="objectives">
+          <li>Deploy three all-sky cameras at Ny-Ålesund for up to five months.</li>
+          <li>Build the data pipeline and refine the cloud base height and wind algorithms for the polar night.</li>
+          <li>Open discussions with modelling centres on using the data in numerical weather prediction.</li>
+          <li>Develop links with Ny-Ålesund and international initiatives, including Arctic RISE, PACES and AMAP, towards a longer-term vision for scaling up the measurements.</li>
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         OUTCOMES
+         ============================================================ -->
+    <section class="section section--tint" id="outcomes" aria-labelledby="outcomes-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Outcomes</p>
+          <h2 id="outcomes-title">Expected outcomes</h2>
+        </header>
+        <div class="split">
+          <div>
+            <h3 class="subhead subhead--tight">During the project</h3>
+            <ul class="ticks">
+              <li>A readily deployable all-sky camera system proven in Arctic conditions.</li>
+              <li>Arctic-optimised algorithms for cloud base height and winds from low-cost, low-power cameras.</li>
+              <li>A demonstration data pipeline ready for assimilation trials at modelling centres.</li>
+              <li>Presentation of the new capability to Arctic stakeholders, including modelling centres and the Arctic RISE community.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="subhead subhead--tight">Longer term</h3>
+            <ul class="ticks">
+              <li>A peer-reviewed publication on the algorithms and data quality.</li>
+              <li>A five-month pilot dataset of all-sky images, cloud base height and cloud-base winds, for weather-prediction trials, aviation, and Arctic safety and security.</li>
+              <li>A route towards a wider network of all-sky cameras across the Arctic, providing real-time data to forecasting centres, air navigation providers and others.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         ARCTIC RISE LINK + PEOPLE
+         ============================================================ -->
+    <section class="section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="split">
+          <div>
+            <header class="section-head">
+              <p class="eyebrow">Arctic RISE</p>
+              <h2>Part of a wider effort</h2>
+            </header>
+            <div class="prose">
+              <p>NAMAS contributes to Arctic RISE's aim of expanding routine profile observations across the Arctic. Its outcomes will feed into longer-term Arctic RISE activity on data for model evaluation and assimilation, and into developments towards IPY 2032–33.</p>
+              <p>Through the PACES community and the Arctic Monitoring and Assessment Programme (AMAP), the project will connect with operational forecasting centres, and with Arctic assessment activities.</p>
+            </div>
+            <p style="margin-top: 1.5rem"><a class="button" href="index.html">About Arctic RISE</a></p>
+          </div>
+          <div>
+            <header class="section-head">
+              <p class="eyebrow">Team</p>
+              <h2 id="team-title">Team and partners</h2>
+            </header>
+            <ul class="people">
+              <li><strong>Steve Arnold</strong><span>University of Leeds · Principal Investigator</span></li>
+              <li><strong>Ben Pickering</strong><span>Wx Labs · All-sky camera development, deployment and data processing</span></li>
+              <li><strong>Kathy Law</strong><span>LATMOS, CNRS · Partner (PACES)</span></li>
+              <li><strong>Simon Wilson</strong><span>Partner (AMAP)</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="subhead">References</h3>
+        <ol class="refs">
+          <li>Arnold, S. R. et al. (2026a). A pivotal role for air pollution during rapid Arctic change. <em>Elementa: Science of the Anthropocene</em>, 14. <a href="https://doi.org/10.1525/elementa.2025.00129">doi:10.1525/elementa.2025.00129</a></li>
+          <li>Arnold, S. R. et al. (2026b). A need for routine regular vertical profiling in the Arctic atmosphere. Arctic Observing Summit 2026, Aarhus, Denmark. <a href="https://doi.org/10.5281/zenodo.21040248">doi:10.5281/zenodo.21040248</a></li>
+          <li>ICARP IV Research Priority Team 1 (2026). <em>The Role of the Arctic in the Global Earth System.</em> Final report, March 2026. <a href="https://doi.org/10.33112/VOYT5486">doi:10.33112/VOYT5486</a></li>
+          <li>Lee, E. et al. (2022). <em>Remote Sensing</em>, 14(21), 5287. <a href="https://doi.org/10.3390/rs14215287">doi:10.3390/rs14215287</a></li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__about">
+        <p class="wordmark wordmark--footer">
+          <svg class="wordmark__mark" viewBox="0 0 20 28" aria-hidden="true" focusable="false">
+            <line x1="10" y1="2" x2="10" y2="26"/>
+            <circle cx="10" cy="6" r="2"/>
+            <circle cx="10" cy="14" r="2"/>
+            <circle cx="10" cy="22" r="2"/>
+          </svg>
+          <span class="wordmark__text">Arctic <strong>RISE</strong></span>
+        </p>
+        <p>Arctic RoutIne atmoSphEric profile sampling — an international initiative to advance coordinated atmospheric vertical-profile observations across the Arctic.</p>
+        <p class="site-footer__affil">Part of <a href="https://igacproject.org/activities/PACES">PACES</a> · co-sponsored by <a href="https://igacproject.org">IGAC</a> and <a href="https://iasc.info">IASC</a></p>
+        <p class="site-footer__note">This site uses privacy-friendly, cookie-free analytics to count visits.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="site-footer__nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#vision">Vision</a></li>
+          <li><a href="index.html#activities">Activities</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

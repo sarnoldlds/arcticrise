@@ -49,7 +49,7 @@
   /* ---- Highlight the current section in the navigation ------------------- */
   var links = Array.prototype.slice.call(document.querySelectorAll('.site-nav a[href^="#"]'));
   // "Why atmospheric profiles matter" belongs to the About menu item
-  var sectionToLink = { top: 'top', why: 'about', about: 'about', vision: 'vision', activities: 'activities', contact: 'contact' };
+  var sectionToLink = { top: 'top', why: 'about', about: 'about', vision: 'vision', activities: 'activities', projects: 'projects', contact: 'contact' };
 
   if ('IntersectionObserver' in window) {
     var observer = new IntersectionObserver(function (entries) {

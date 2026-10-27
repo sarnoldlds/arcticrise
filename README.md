@@ -6,6 +6,7 @@ Plain HTML, CSS and a little JavaScript — no build step, no frameworks, no ext
 ```
 (repository root)
 ├── index.html              All page content (text, sections, hero illustration)
+├── namas.html              Project page for NAMAS (linked from the Projects section)
 ├── css/styles.css          All styling (colours, fonts, layout, responsive rules)
 ├── js/main.js              Mobile menu, header on scroll, active nav link, contact email
 ├── assets/
@@ -78,6 +79,18 @@ The address is set in **one place** in `index.html`, split into two parts so tha
 This deters most automated address harvesting but isn't foolproof.
 
 The current address, **contact@arcticrise.org**, is an email-forwarding alias set up in Squarespace (account.squarespace.com/domains → arcticrise.org → Email forwarding). To change who receives enquiries, edit the forwarding rule there – the website doesn't need to change.
+
+### Project pages
+
+Each funded project has its own page (currently `namas.html`, at https://www.arcticrise.org/namas.html), linked from a card in the **Projects** section of `index.html` (`id="projects"`).
+
+To add another project:
+
+1. Copy `namas.html` to a new file, e.g. `newproject.html`, and edit its text. The header, footer and styles are shared, so only the content between `<main>` and `</main>` needs changing.
+2. In `index.html`, copy the `<article class="project-card">…</article>` block in the Projects section, and point its links at the new page.
+3. Upload both files and click **Commit changes**.
+
+Keep budgets and other internal details off public project pages.
 
 ### Visitor statistics
 
